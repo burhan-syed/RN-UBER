@@ -6,10 +6,10 @@ const initialState = {
   travelTimeInformation: null,
 };
 
-export const navSlice = createSlice({
+const navSlice = createSlice({
   name: "nav",
   initialState,
-  reducer: {
+  reducers: {
     setOrigin: (state, action) => {
       state.origin = action.payload;
     },
